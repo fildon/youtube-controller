@@ -1,3 +1,5 @@
+// TODO make this whole thing idempotent
+
 // Fetch elements on the page
 const buttonContainer = document.querySelector(".ytp-right-controls");
 if (!buttonContainer) {
@@ -37,4 +39,4 @@ plusButton.addEventListener("click", () => {
 });
 
 // Insert the controls into the UI
-buttonContainer.prepend(minusButton, plusButton);
+buttonContainer.prepend(minusButton, speedDisplay, plusButton);
