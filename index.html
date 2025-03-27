@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube Controller</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <h1>Youtube Controller</h1>
+    <h2>Usage</h2>
+    <p>Drag this button to your bookmarks bar to save it as a bookmarklet:</p>
+    <a
+      style="
+        display: inline-block;
+        padding: 0.5em 1em;
+        color: #fff;
+        background: #50dcf3;
+        border-radius: 4px;
+        text-decoration: none;
+      "
+      class="bookmarklet"
+      href="javascript:(function()%7B%22use%20strict%22%3B(()%3D%3E%7Bvar%20t%3Ddocument.querySelector(%22.ytp-right-controls%22)%3Bif(!t)throw%20new%20Error(%22FUCK%22)%3Bvar%20e%3Ddocument.querySelector(%22video%22)%3Bif(!e)throw%20new%20Error(%22FUCK%22)%3Bvar%20r%3Ddocument.createElement(%22button%22)%3Br.append(%22-%22)%2Cr.classList.add(%22playerButton%22%2C%22ytp-button%22)%2Cr.addEventListener(%22click%22%2C(()%3D%3E%7Be.playbackRate-%3D.01%7D))%3Bvar%20a%3Ddocument.createElement(%22button%22)%3Ba.append(%22%2B%22)%2Ca.classList.add(%22playerButton%22%2C%22ytp-button%22)%2Ca.addEventListener(%22click%22%2C(()%3D%3E%7Be.playbackRate%2B%3D.01%7D))%2Ct.prepend(r%2Ca)%7D)()%3B%7D)()"
+      >Youtube-Controller</a
+    >
+    <p>
+      Then at any time when on
+      <a href="https://www.youtube.com/">Youtube</a> click the bookmarklet to
+      enhance the video with additional controls.
+    </p>
+  </body>
+</html>
