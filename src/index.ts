@@ -23,10 +23,10 @@ minusButton.addEventListener("click", () => {
 });
 
 // Initialize speed display
-const speedDisplay = document.createElement("span");
+const speedDisplay = document.createElement("div");
 speedDisplay.append("100%");
 speedDisplay.classList.add("playerButton", "ytp-button");
-speedDisplay.style.fontSize = "50px";
+speedDisplay.style.fontSize = "20px";
 
 // Initialize plus button
 const plusButton = document.createElement("button");
